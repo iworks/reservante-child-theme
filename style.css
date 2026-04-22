@@ -1,0 +1,156 @@
+/*
+ Theme Name:   Reservante Child Theme
+ Theme URI:    https://tadanero.com/themes/reservante-child-theme/
+ Description:  Reservante child theme - Template
+ Author:       Tadanero
+ Author URI:   https://tadanero.pl/
+ Template:     reservante
+ Version:      1.0.0
+ License:      GNU General Public License v3 or later
+ License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+ Text Domain:  reservante-child-theme
+*/
+
+/* ------------------------------------------------------------------
+  Black and Dark Mode Color Palette for Reservante Child Theme
+  Generated as a harmonious black and dark mode-based color scheme
+------------------------------------------------------------------ */
+
+:root {
+	--font-family-serif: serif;
+	--font-family-sans-serif: sans-serif;
+
+	/* COLORS */
+	--color-theme-white: #fff;
+	--color-theme-black: #000;
+	
+	--color-theme-background: #fcfdff;
+
+	/* Primary */
+	--color-theme-primary: #0f1539;
+	--color-theme-primary-20: #0f153933;
+	--color-theme-primary-50: #0f153980;
+
+	/* Accent */
+	--color-theme-accent: #2955f3ff;
+	--color-theme-accent-20: #2955F333;
+	--color-theme-accent-50: #2955F380;
+
+	--color-theme-accent-light-1: #d4ddfcff;
+	--color-theme-accent-light-2: #e8ebf7ff;
+	--color-theme-accent-light-3: #f2f4f8ff;
+
+	--colot-theme-accent-second: #613dc1ff;
+	--colot-theme-accent-second-20: #613dc133;
+	--colot-theme-accent-second-50: #613dc180;
+
+	/* Fills */
+
+	--colot-theme-fill-01: #8787ab;
+	--colot-theme-fill-02: #9c9cc2;
+
+
+	/* Alert */
+	--color-theme-alert: #f00a4f;
+
+	/* Other */
+	--color-theme-01: #ccdaeb;
+	--color-theme-02: #254473;
+	--color-theme-03: #1c2b3f;
+	--color-theme-04: #c8cfd8;
+	--color-theme-05: #5b6773;
+	--color-theme-06: #c8cfd8;
+
+	/* BRANDS COLORS */
+	--color-theme-facebook: #4267b2;
+	--color-theme-instagram: #405de6;
+	--color-theme-linkedin: #0a66c2;
+	--color-theme-twitter: #1da1f2;
+    /**
+  * Border
+  */
+    --radius-default: 10px;
+}
+
+body #primary {
+    padding: 0;
+}
+
+a {
+    color: var(--color-theme-accent);
+}
+
+.button-a a {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.distinctor {
+    border-bottom: 1px solid var(--color-theme-accent);
+    max-width: 50%;
+    font-weight: 700;
+
+    &::after {
+        content: '';
+        display: block;
+        max-width: 20%;
+        height: 3px;
+        background-color: var(--color-theme-accent);
+        margin-top: .5em;
+    }
+}
+
+body:not(.home):not(.front-page).page #primary .breadcrumbs,
+body:not(.home):not(.front-page).page #primary article {
+    max-width: var(--theme-width-xl);
+}
+
+.breadcrumbs {
+    padding: var(--spacer-24) 0;
+}
+
+.site-header {
+    padding: var(--spacer-48);
+    border-bottom: 1px solid var(--color-theme-accent);
+}
+
+.site-title a,
+.site-title a img {
+    display: block;
+    height: var(--spacer-80);
+    line-height: 0;
+}
+
+.site-title {
+    margin: 0;
+    height: var(--spacer-80);
+}
+
+.entry-content img,
+form input[type=email],
+form input[type=number],
+form input[type=password],
+form input[type=search],
+form input[type=tel],
+form input[type=text],
+form select,
+form textarea {
+    border-radius: var(--radius-default);
+}
+
+/**
+* Contact form 7
+*/
+.wpcf7 label:has(.wpcf7-validates-as-required) .label:after {
+    content: " *";
+    color: var(--color-theme-accent);
+    font-size: var(--font-size-24);
+}
+
+.main-navigation ul ul {
+  display: block;
+  background-color: var(--Brand-Colors-Background);
+}
+.main-navigation ul ul a{
+  padding: var(--spacer-16);
+}
